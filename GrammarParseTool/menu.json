@@ -1,0 +1,49 @@
+{
+  "slot_types": [
+    {
+      "name": "Menu",
+      "values": [
+        "鱼香肉丝",
+        "宫保鸡丁",
+        "鱼香茄子"
+      ]
+    },
+    {
+      "name": "City",
+      "values": [
+        "成都",
+        "绵阳",
+        "江油"
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "name": "FX.OrderIntent",
+      "samples": [
+        "来一个{菜品}吧",
+        "我想吃{菜品}"
+      ],
+      "slots": [
+        {
+          "name": "菜品",
+          "type": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "FX.CancelIntent",
+      "samples": [
+        "取消订餐",
+        "不点了"
+      ]
+    },
+    {
+      "name": "FX.HelpIntent",
+      "samples": [
+        "告诉我该怎么点菜",
+        "这个系统怎么使用"
+      ]
+    }
+  ]
+}
